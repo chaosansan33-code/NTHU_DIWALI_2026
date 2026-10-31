@@ -1,0 +1,41 @@
+/* memory 遊戲專屬樣式（由 js/games/host.js 在第一次開啟遊戲時自動載入）。卡面圖片在 images/ */
+.memory-board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+.memory-tile {
+  height: 94px;
+  background: #23263a;
+  color: var(--gold);
+  font-size: 22px;
+}
+.memory-tile.revealed {
+  background: #3a3040;
+}
+.memory-face {
+  display: block;
+  width: 56px;
+  height: 56px;
+  margin: auto;
+  pointer-events: none;
+}
+.memory-tile.matched {
+  background: #35453f;
+  border-color: #acc9b5;
+  color: #e3f2e8;
+}
+@media (max-width: 700px) {
+  .memory-board {
+    gap: 8px;
+  }
+  .memory-tile {
+    height: 75px;
+    font-size: 17px;
+    padding: 5px;
+  }
+  .memory-face {
+    width: 42px;
+    height: 42px;
+  }
+}

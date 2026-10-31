@@ -1,0 +1,501 @@
+{
+  "version": 1,
+  "site": {
+    "title": "離家以後，我們一起點燈",
+    "intro": "有些光，讓我們想起家。\n沿著一盞燈，走進一個人的排燈節。",
+    "heroImage": "assets/hero.jpg",
+    "about": "這場展覽從離家、相聚與文化交流出發，邀請觀眾透過個人記憶認識排燈節。\n目前為互動示範版：所有人物、引言與故事均為虛構示例，非真實採訪；首頁燈火圖為 AI 生成的氛圍影像。正式內容將由受訪者與共同策展者確認後替換。",
+    "eventText": "未來，這裡將收錄共同籌備與晚會的真實影像。\n故事會繼續，光也會繼續。",
+    "en": {
+      "title": "Far from Home, We Light the Lamps Together",
+      "intro": "Some lights remind us of home.\nFollow a lamp into one person's Diwali.",
+      "about": "This exhibition begins with leaving home, gathering, and cultural exchange, inviting visitors to discover Diwali through personal memories.\nThis is an interactive demo: all people, quotes, and stories are fictional samples, not real interviews, and the lamp image on the home page is AI-generated. Final content will replace them after review by the interviewees and co-curators.",
+      "eventText": "In the future, this space will hold real images from preparing together and from the evening celebration.\nThe stories will go on, and so will the light."
+    }
+  },
+  "stories": [
+    {
+      "id": "jaipur-memory",
+      "name": "Aarav",
+      "city": "齋浦爾",
+      "cityEn": "JAIPUR",
+      "coordinates": [
+        75.7873,
+        26.9124
+      ],
+      "theme": "家的味道",
+      "demo": true,
+      "quote": "想念的，是廚房裡忙碌的聲音。",
+      "intro": "一張餐桌，記住一家人相聚的樣子。",
+      "body": "這是一篇等待真實訪談替換的故事示例。\n在這個展間，受訪者可以從一道節慶食物出發，談談一起準備的人、熟悉的氣味，以及最期待的時刻。\n一個家庭的經驗，只代表這個家庭；讓每個人用自己的話，說出屬於他的排燈節。",
+      "taiwan": "這一段可以記錄來臺後如何尋找熟悉的食材，或邀請新朋友一起做一道家鄉料理。",
+      "portrait": "",
+      "cover": "",
+      "video": "",
+      "audio": "",
+      "photos": [],
+      "memories": [
+        {
+          "title": "一張食譜",
+          "text": "請替換為受訪者珍藏的食譜，以及寫下它的人的故事。",
+          "en": {
+            "title": "A recipe",
+            "text": "Replace with a recipe the interviewee treasures, and the story of the person who wrote it."
+          }
+        },
+        {
+          "title": "一只餐盤",
+          "text": "請替換為某次相聚使用的物件，並說明它的意義。",
+          "en": {
+            "title": "A plate",
+            "text": "Replace with an object used at a gathering, and explain what it means."
+          }
+        },
+        {
+          "title": "一段聲音",
+          "text": "請替換為廚房的聲音、家人的話語，或一段本人錄音。",
+          "en": {
+            "title": "A sound",
+            "text": "Replace with kitchen sounds, a family member's words, or a recording by the interviewee."
+          }
+        }
+      ],
+      "en": {
+        "name": "Aarav",
+        "city": "Jaipur",
+        "theme": "Taste of home",
+        "quote": "What I miss is the busy sound of the kitchen.",
+        "intro": "A dining table that remembers how a family gathers.",
+        "body": "This is a sample story waiting to be replaced by a real interview.\nIn this room, the interviewee can start from a festive dish and talk about who prepared it with them, the familiar smells, and the moment they looked forward to most.\nOne family's experience speaks only for that family; let each person tell their own Diwali in their own words.",
+        "taiwan": "This section can describe searching for familiar ingredients after arriving in Taiwan, or inviting new friends to cook a dish from home together."
+      }
+    },
+    {
+      "id": "delhi-memory",
+      "name": "Meera",
+      "city": "新德里",
+      "cityEn": "NEW DELHI",
+      "coordinates": [
+        77.209,
+        28.6139
+      ],
+      "theme": "家人的記憶",
+      "demo": true,
+      "quote": "離家以後，才發現日常就是禮物。",
+      "intro": "從一通電話，回到熟悉的客廳。",
+      "body": "此人物與引言為示意內容。\n這個展間適合收錄與家人相處的片段：誰負責準備？大家會聊些什麼？哪張照片最能代表那一天？\n採訪不必只聚焦盛大的慶祝，也可以留下安靜、平凡而珍貴的瞬間。",
+      "taiwan": "在這裡記錄受訪者今年想與誰分享節日，以及遠距離相聚的方式。",
+      "portrait": "",
+      "cover": "",
+      "video": "",
+      "audio": "",
+      "photos": [],
+      "memories": [
+        {
+          "title": "一張合照",
+          "text": "照片拍攝於何時？鏡頭外還發生了什麼？",
+          "en": {
+            "title": "A group photo",
+            "text": "When was the photo taken? What else was happening outside the frame?"
+          }
+        },
+        {
+          "title": "一通電話",
+          "text": "記錄本人願意分享的通話回憶。",
+          "en": {
+            "title": "A phone call",
+            "text": "A memory of a call the interviewee is willing to share."
+          }
+        },
+        {
+          "title": "一件禮物",
+          "text": "請受訪者介紹這件物品為何特別。",
+          "en": {
+            "title": "A gift",
+            "text": "Ask the interviewee why this object is special."
+          }
+        }
+      ],
+      "en": {
+        "name": "Meera",
+        "city": "New Delhi",
+        "theme": "Family memories",
+        "quote": "Only after leaving home did I realize everyday life was a gift.",
+        "intro": "A phone call that leads back to a familiar living room.",
+        "body": "This person and quote are placeholders.\nThis room is a place for moments with family: Who does the preparing? What does everyone talk about? Which photo best captures that day?\nThe interview doesn't have to focus on grand celebrations; it can also keep quiet, ordinary, precious moments.",
+        "taiwan": "Record here who the interviewee wants to share the festival with this year, and how they gather across distance."
+      }
+    },
+    {
+      "id": "mumbai-memory",
+      "name": "Rohan",
+      "city": "孟買",
+      "cityEn": "MUMBAI",
+      "coordinates": [
+        72.8777,
+        19.076
+      ],
+      "theme": "童年的光",
+      "demo": true,
+      "quote": "那盞燈，照見小時候的自己。",
+      "intro": "一個童年的片段，一直留到了現在。",
+      "body": "此為虛構人物故事示例。\n這裡可以用一張老照片開始，讓受訪者描述當時看到的光、聽到的聲音，以及身旁的人。\n將具體的記憶慢慢展開，比替所有人總結習俗更能讓觀眾走近一個人的生活。",
+      "taiwan": "這段可以比較童年與現在，哪些期待改變了，哪些仍然被珍惜。",
+      "portrait": "",
+      "cover": "",
+      "video": "",
+      "audio": "",
+      "photos": [],
+      "memories": [
+        {
+          "title": "一盞燈",
+          "text": "放入受訪者選擇的燈與它的故事。",
+          "en": {
+            "title": "A lamp",
+            "text": "The lamp the interviewee chose, and its story."
+          }
+        },
+        {
+          "title": "一張老照片",
+          "text": "補上照片年份、來源與本人說明。",
+          "en": {
+            "title": "An old photo",
+            "text": "Add the year, source, and the interviewee's own description."
+          }
+        },
+        {
+          "title": "一個角落",
+          "text": "哪個家中的角落最讓他想念？",
+          "en": {
+            "title": "A corner of home",
+            "text": "Which corner of home do they miss the most?"
+          }
+        }
+      ],
+      "en": {
+        "name": "Rohan",
+        "city": "Mumbai",
+        "theme": "Childhood lights",
+        "quote": "That lamp shows me who I was as a child.",
+        "intro": "A moment from childhood that has stayed until now.",
+        "body": "This is a fictional sample story.\nIt can begin with an old photo, letting the interviewee describe the light they saw, the sounds they heard, and the people beside them.\nUnfolding specific memories slowly brings visitors closer to one person's life than summarizing customs for everyone.",
+        "taiwan": "This section can compare childhood and now: which hopes have changed, and which are still cherished."
+      }
+    },
+    {
+      "id": "kolkata-memory",
+      "name": "Ananya",
+      "city": "加爾各答",
+      "cityEn": "KOLKATA",
+      "coordinates": [
+        88.3639,
+        22.5726
+      ],
+      "theme": "自己的節奏",
+      "demo": true,
+      "quote": "我的節日，也可以很安靜。",
+      "intro": "聽見不同的選擇，也留下不同的感受。",
+      "body": "此為虛構人物故事示例。\n不是每個人都用同樣的方式參與節日。這個展間可以收錄受訪者自己的選擇、家庭背景與感受。\n讓他決定哪些部分想分享，哪些希望保留。",
+      "taiwan": "可以在這裡談談在臺灣遇到的新朋友，以及希望朋友如何理解自己。",
+      "portrait": "",
+      "cover": "",
+      "video": "",
+      "audio": "",
+      "photos": [],
+      "memories": [
+        {
+          "title": "一本筆記",
+          "text": "記錄一段本人想公開的文字。",
+          "en": {
+            "title": "A notebook",
+            "text": "A piece of writing the interviewee wants to make public."
+          }
+        },
+        {
+          "title": "一段音樂",
+          "text": "替換成已取得使用授權的音樂或錄音。",
+          "en": {
+            "title": "A piece of music",
+            "text": "Replace with music or a recording that has permission to be used."
+          }
+        },
+        {
+          "title": "一封信",
+          "text": "一封寄給家人、朋友或自己的信。",
+          "en": {
+            "title": "A letter",
+            "text": "A letter to family, a friend, or oneself."
+          }
+        }
+      ],
+      "en": {
+        "name": "Ananya",
+        "city": "Kolkata",
+        "theme": "My own rhythm",
+        "quote": "My festival can be a quiet one too.",
+        "intro": "Hearing different choices, and the feelings that come with them.",
+        "body": "This is a fictional sample story.\nNot everyone takes part in the festival the same way. This room can hold the interviewee's own choices, family background, and feelings.\nLet them decide which parts to share and which to keep to themselves.",
+        "taiwan": "Here they can talk about new friends met in Taiwan, and how they hope friends will understand them."
+      }
+    },
+    {
+      "id": "chennai-memory",
+      "name": "Kavya",
+      "city": "清奈",
+      "cityEn": "CHENNAI",
+      "coordinates": [
+        80.2707,
+        13.0827
+      ],
+      "theme": "家人的記憶",
+      "demo": true,
+      "quote": "把熟悉的記憶，帶到新的地方。",
+      "intro": "一件行李裡的物品，連起兩個家。",
+      "body": "此為虛構人物故事示例。\n請受訪者挑選一件帶來臺灣的物品，說說它從哪裡來、誰交給他，以及為什麼留下。\n由一件小東西開始，慢慢談到離家與歸屬。",
+      "taiwan": "此處可加入在臺生活照片，以及第一次和新朋友一起過節的記錄。",
+      "portrait": "",
+      "cover": "",
+      "video": "",
+      "audio": "",
+      "photos": [],
+      "memories": [
+        {
+          "title": "一件衣服",
+          "text": "這件衣服的顏色、觸感與故事。",
+          "en": {
+            "title": "A piece of clothing",
+            "text": "The color, texture, and story of this garment."
+          }
+        },
+        {
+          "title": "一份行李",
+          "text": "離家時選擇帶走了什麼？",
+          "en": {
+            "title": "A suitcase",
+            "text": "What did they choose to bring when leaving home?"
+          }
+        },
+        {
+          "title": "一個新朋友",
+          "text": "讓受訪者介紹一段新的相遇。",
+          "en": {
+            "title": "A new friend",
+            "text": "Let the interviewee introduce a new encounter."
+          }
+        }
+      ],
+      "en": {
+        "name": "Kavya",
+        "city": "Chennai",
+        "theme": "Family memories",
+        "quote": "Bringing familiar memories to a new place.",
+        "intro": "One object in a suitcase that connects two homes.",
+        "body": "This is a fictional sample story.\nAsk the interviewee to pick one object they brought to Taiwan and tell where it came from, who gave it to them, and why they kept it.\nStarting from a small thing, the conversation can slowly turn to leaving home and belonging.",
+        "taiwan": "Add photos of life in Taiwan here, and a record of celebrating with new friends for the first time."
+      }
+    },
+    {
+      "id": "bengaluru-memory",
+      "name": "Dev",
+      "city": "班加羅爾",
+      "cityEn": "BENGALURU",
+      "coordinates": [
+        77.5946,
+        12.9716
+      ],
+      "theme": "在臺灣相聚",
+      "demo": true,
+      "quote": "今年，想多擺一個人的位置。",
+      "intro": "邀請與被邀請，都是靠近的開始。",
+      "body": "此為虛構人物故事示例。\n這裡可以收錄受訪者如何邀請朋友一起參與節日：他會從什麼開始介紹？最想一起做什麼？\n也可以邀請朋友分享參與後的回應，並分別取得公開同意。",
+      "taiwan": "晚會後，把一起籌備、創作與用餐的真實影像放在這裡，讓故事繼續。",
+      "portrait": "",
+      "cover": "",
+      "video": "",
+      "audio": "",
+      "photos": [],
+      "memories": [
+        {
+          "title": "一張邀請",
+          "text": "分享一次邀請朋友參與的經驗。",
+          "en": {
+            "title": "An invitation",
+            "text": "Share an experience of inviting friends to take part."
+          }
+        },
+        {
+          "title": "一份創作",
+          "text": "放入共同創作的照片與過程。",
+          "en": {
+            "title": "A shared creation",
+            "text": "Photos and the process of something made together."
+          }
+        },
+        {
+          "title": "一張餐桌",
+          "text": "相聚時最難忘的對話是什麼？",
+          "en": {
+            "title": "A dinner table",
+            "text": "What was the most memorable conversation at the gathering?"
+          }
+        }
+      ],
+      "en": {
+        "name": "Dev",
+        "city": "Bengaluru",
+        "theme": "Gathering in Taiwan",
+        "quote": "This year, I want to set one more place at the table.",
+        "intro": "Inviting and being invited are both ways of coming closer.",
+        "body": "This is a fictional sample story.\nThis room can show how the interviewee invites friends to join the festival: Where would they begin explaining it? What would they most like to do together?\nFriends can also share their reflections afterward, each with their own consent to publish.",
+        "taiwan": "After the evening event, real images of preparing, creating, and eating together will be placed here so the story continues."
+      }
+    }
+  ],
+  "culture": [
+    {
+      "id": "light",
+      "title": "一盞燈",
+      "subtitle": "從光開始，聽見人的故事。",
+      "body": "Diwali 常被稱為 Festival of Lights。展覽從「光」這個入口出發，讓受訪者說明它在自己生活中的意義。\n同樣的物件可以承載不同記憶：先聽個人的故事，再理解背景。",
+      "source": "https://www.britannica.com/topic/Diwali-Hindu-festival",
+      "sourceLabel": "背景閱讀：Encyclopaedia Britannica · Diwali",
+      "en": {
+        "title": "A Lamp",
+        "subtitle": "Starting with light, we hear people's stories.",
+        "body": "Diwali is often called the Festival of Lights. The exhibition uses light as an entry point and lets each interviewee explain what it means in their own life.\nThe same object can carry different memories: listen to the personal story first, then understand the background.",
+        "sourceLabel": "Background reading: Encyclopaedia Britannica · Diwali"
+      }
+    },
+    {
+      "id": "table",
+      "title": "一桌相聚",
+      "subtitle": "一道食物，連起人與記憶。",
+      "body": "本展以食物作為訪談入口：它叫什麼名字？誰會準備？受訪者會把它和哪一次相聚連在一起？\n這些回答將以個人經驗呈現，不把某一道料理設定成所有家庭都必備的節慶食物。",
+      "source": "",
+      "sourceLabel": "",
+      "en": {
+        "title": "A Shared Table",
+        "subtitle": "A dish that connects people and memories.",
+        "body": "The exhibition uses food as a way into the interviews: What is it called? Who prepares it? Which gathering does the interviewee connect it with?\nThese answers are presented as personal experiences; no single dish is treated as a festive food every family must have."
+      }
+    },
+    {
+      "id": "home",
+      "title": "不只一種家",
+      "subtitle": "讓差異，也成為展覽的一部分。",
+      "body": "不同地區、家庭與個人可能有不同的節慶經驗。展覽保留每個人的說法，也容許沒有慶祝、安靜度過，或隨生活改變的故事。\n你可以對照不同人物，但不需要找出一個唯一的標準答案。",
+      "source": "",
+      "sourceLabel": "",
+      "en": {
+        "title": "More Than One Kind of Home",
+        "subtitle": "Letting differences be part of the exhibition too.",
+        "body": "Different regions, families, and individuals may experience the festival differently. The exhibition keeps each person's own account, and makes room for stories of not celebrating, spending it quietly, or changing with life.\nYou can compare different people, but there is no single standard answer to find."
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": "在這場展覽裡，一位受訪者的故事代表什麼？",
+      "options": [
+        "他自己的經驗與記憶",
+        "整個印度唯一的過節方式",
+        "每個家庭都必須遵守的規則"
+      ],
+      "answer": 0,
+      "explanation": "我們從個人的生活出發，也保留其他人的不同經驗。",
+      "en": {
+        "question": "In this exhibition, what does one interviewee's story represent?",
+        "options": [
+          "Their own experiences and memories",
+          "The only way all of India celebrates",
+          "Rules every family must follow"
+        ],
+        "explanation": "We start from individual lives, while keeping space for other people's different experiences."
+      }
+    },
+    {
+      "question": "看見一張節慶食物照片，你最想先問什麼？",
+      "options": [
+        "所有人是不是都吃這一道？",
+        "這道食物對你有什麼特別的記憶？",
+        "它是不是唯一正確的節慶料理？"
+      ],
+      "answer": 1,
+      "explanation": "具體而開放的提問，能讓受訪者用自己的方式說故事。",
+      "en": {
+        "question": "Seeing a photo of a festive dish, what would you ask first?",
+        "options": [
+          "Does everyone eat this dish?",
+          "What special memory does this dish hold for you?",
+          "Is it the only correct festive food?"
+        ],
+        "explanation": "Specific, open questions let interviewees tell their stories in their own way."
+      }
+    },
+    {
+      "question": "準備把朋友的故事放上網站時，應該先做什麼？",
+      "options": [
+        "先公開，之後再告知",
+        "只確認拼字",
+        "請本人確認內容與公開範圍"
+      ],
+      "answer": 2,
+      "explanation": "故事、影像、譯文與姓名呈現方式，都應由本人確認。",
+      "en": {
+        "question": "Before putting a friend's story on the website, what should you do first?",
+        "options": [
+          "Publish first and tell them later",
+          "Only check the spelling",
+          "Ask them to confirm the content and what can be made public"
+        ],
+        "explanation": "The story, images, translations, and how their name appears should all be confirmed by the person themselves."
+      }
+    }
+  ],
+  "messages": [
+    {
+      "id": "sample-1",
+      "name": "策展團隊",
+      "topic": "祝福",
+      "message": "願每個離家的人，都能在新的地方找到一起點燈的朋友。",
+      "sample": true,
+      "en": {
+        "name": "Curatorial team",
+        "message": "May everyone who has left home find friends to light the lamps with in a new place."
+      }
+    },
+    {
+      "id": "sample-2",
+      "name": "觀眾留言",
+      "topic": "家的記憶",
+      "message": "對我來說，家的味道是晚餐前，廚房裡傳來的聲音。",
+      "sample": true,
+      "en": {
+        "name": "Visitor",
+        "message": "For me, the taste of home is the sound coming from the kitchen just before dinner."
+      }
+    },
+    {
+      "id": "sample-3",
+      "name": "觀眾留言",
+      "topic": "提問",
+      "message": "如果邀請第一次接觸排燈節的朋友，你最想和他一起做什麼？",
+      "sample": true,
+      "en": {
+        "name": "Visitor",
+        "message": "If you invited a friend who has never experienced Diwali, what would you most want to do together?"
+      }
+    },
+    {
+      "id": "sample-4",
+      "name": "策展團隊",
+      "topic": "祝福",
+      "message": "把一點光留在這裡，讓我們慢慢認識彼此。",
+      "sample": true,
+      "en": {
+        "name": "Curatorial team",
+        "message": "Leave a little light here, and let us slowly get to know each other."
+      }
+    }
+  ]
+}

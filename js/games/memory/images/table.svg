@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#eac18c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+  <title>Dining table</title>
+  <ellipse cx="32" cy="30" rx="24" ry="7" fill="#eac18c14"/>
+  <path d="M14 34v18M50 34v18M32 37v15"/>
+  <ellipse cx="26" cy="28" rx="5" ry="2" fill="#c77a6255"/>
+  <path d="M37 22v6M40 20v8M43 22v6"/>
+</svg>

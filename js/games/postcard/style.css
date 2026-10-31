@@ -1,0 +1,21 @@
+/* postcard 遊戲專屬樣式（由 js/games/host.js 在第一次開啟遊戲時自動載入） */
+.postcard-preview {
+  padding: 42px 25px;
+  text-align: center;
+  background: radial-gradient(ellipse at bottom, #72503a, #171e31 70%);
+  border: 1px solid #eac18c66;
+  margin: 20px 0;
+  overflow-wrap: anywhere;
+}
+.postcard-preview h3 {
+  color: var(--gold);
+  font-size: 25px;
+}
+.postcard-preview p {
+  font-family: var(--serif);
+  font-size: 20px;
+  white-space: pre-line;
+}
+.postcard-preview small {
+  color: var(--muted);
+}

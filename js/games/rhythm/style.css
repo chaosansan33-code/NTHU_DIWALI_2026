@@ -1,0 +1,25 @@
+/* rhythm 遊戲專屬樣式（由 js/games/host.js 在第一次開啟遊戲時自動載入） */
+.sound-pads {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+.sound-pads button {
+  height: 115px;
+  font-size: 28px;
+  background: #30293e;
+}
+.sound-pads button.lit {
+  background: var(--gold);
+  color: var(--bg);
+  box-shadow: 0 0 30px #eac18c50;
+}
+@media (max-width: 700px) {
+  .sound-pads {
+    gap: 8px;
+  }
+  .sound-pads button {
+    height: 80px;
+    font-size: 22px;
+  }
+}

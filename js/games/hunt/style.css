@@ -1,0 +1,16 @@
+/* hunt 遊戲專屬樣式（由 js/games/host.js 在第一次開啟遊戲時自動載入） */
+.hunt-list {
+  list-style: none;
+  padding: 0;
+}
+.hunt-list li {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.hunt-list span {
+  font-size: 14px;
+  color: var(--muted);
+}

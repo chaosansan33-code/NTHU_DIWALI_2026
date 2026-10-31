@@ -1,0 +1,18 @@
+/* quiz 遊戲專屬樣式（由 js/games/host.js 在第一次開啟遊戲時自動載入） */
+.question-options {
+  display: grid;
+  gap: 12px;
+  margin: 25px 0;
+}
+.question-options button {
+  text-align: left;
+  padding: 15px;
+}
+.question-options button.correct {
+  border-color: #9fc2a0;
+  background: #254035;
+}
+.question-options button.wrong {
+  border-color: #c19b8e;
+  background: #453131;
+}

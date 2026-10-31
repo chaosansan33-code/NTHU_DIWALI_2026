@@ -1,38 +1,117 @@
 <!doctype html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- 安全政策：只允許本站的程式、Supabase 連線與 YouTube 嵌入影片 -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; media-src 'self' https:; frame-src https://www.youtube-nocookie.com; connect-src 'self' https://*.supabase.co; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>離家以後，我們一起點燈｜Light Across Home</title>
   <meta name="description" content="從印度家鄉的記憶，走向臺灣的相聚。一場關於排燈節、離家與歸屬的互動數位展覽。">
   <meta name="theme-color" content="#10121c">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <a class="skip" href="#main">跳至展覽內容</a>
+  <!-- 文字標記：data-i18n / data-i18n-html / data-i18n-attr 對應 js/i18n/strings.js 的 key -->
+  <a class="skip" href="#main" data-i18n="skip">跳至展覽內容</a>
+
   <header class="site-header">
-    <a class="brand" href="#home"><span class="brand-mark">✳</span><span>LIGHT ACROSS HOME<small>離家以後，我們一起點燈</small></span></a>
-    <nav aria-label="主要導覽"><a href="#map">故事地圖</a><a href="#culture">文化探索</a><a href="#play">互動工坊</a><a href="#wall">點燈留言</a></nav>
-    <button id="collection-button" class="collection-button" aria-label="開啟我的收藏">收藏 <span id="collection-count">0</span></button>
+    <a class="brand" href="#home"><span class="brand-mark">✳</span><span>LIGHT ACROSS HOME<small data-i18n="brand.tagline">離家以後，我們一起點燈</small></span></a>
+    <nav aria-label="主要導覽" data-i18n-attr="aria-label:nav.aria"><a href="#map" data-i18n="nav.map">故事地圖</a><a href="#culture" data-i18n="nav.culture">文化探索</a><a href="#play" data-i18n="nav.play">互動工坊</a><a href="#wall" data-i18n="nav.wall">點燈留言</a></nav>
+    <div class="header-actions">
+      <button id="lang-button" class="lang-button" type="button" lang="en" aria-label="Switch to English">EN</button>
+      <button id="collection-button" class="collection-button" aria-label="開啟我的收藏" data-i18n-attr="aria-label:collection.aria"><span data-i18n="collection.label">收藏</span> <span id="collection-count">0</span></button>
+    </div>
   </header>
+
   <main id="main">
+    <!-- 首頁 -->
     <section id="home" class="hero">
-      <div class="hero-image" role="img" aria-label="夜色中燃起的陶製油燈；AI 生成的展覽氛圍影像"></div>
-      <div class="hero-copy"><p class="eyebrow">A DIGITAL EXHIBITION · DIWALI</p><h1>離家以後，<br>我們一起<span>點燈</span>。</h1><p class="hero-english">A little light. A thousand ways home.</p><p class="hero-intro">有些光，讓我們想起家。<br>沿著一盞燈，走進一個人的排燈節。</p><div class="hero-actions"><a class="button gold" href="#map">進入故事地圖 <span>↗</span></a><a class="quiet-link" href="#play">先逛互動工坊</a></div><p class="demo-note">展覽預覽版 · 人物與故事為示意內容，等待真實採訪入展</p></div>
-      <div class="hero-bottom"><span>INDIA ↔ TAIWAN</span><span>家的記憶，從這裡開始</span><a href="#map">SCROLL TO EXPLORE ↓</a></div>
+      <div class="hero-image" role="img" aria-label="夜色中燃起的陶製油燈；AI 生成的展覽氛圍影像" data-i18n-attr="aria-label:hero.imageAlt"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">A DIGITAL EXHIBITION · DIWALI</p>
+        <h1 data-i18n-html="hero.title">離家以後，<br>我們一起<span>點燈</span>。</h1>
+        <p class="hero-english">A little light. A thousand ways home.</p>
+        <p class="hero-intro">有些光，讓我們想起家。<br>沿著一盞燈，走進一個人的排燈節。</p>
+        <div class="hero-actions"><a class="button gold" href="#map"><span data-i18n="hero.enterMap">進入故事地圖</span> <span>↗</span></a><a class="quiet-link" href="#play" data-i18n="hero.browsePlay">先逛互動工坊</a></div>
+        <p class="demo-note" data-i18n="hero.demoNote">展覽預覽版 · 人物與故事為示意內容，等待真實採訪入展</p>
+      </div>
+      <div class="hero-bottom"><span>INDIA ↔ TAIWAN</span><span data-i18n="hero.bottom">家的記憶，從這裡開始</span><a href="#map">SCROLL TO EXPLORE ↓</a></div>
     </section>
+
+    <!-- 01 故事地圖（js/app/map.js、js/app/stories.js） -->
     <section id="map" class="section map-section">
-      <div class="section-heading"><div><p class="eyebrow">01 / AN ATLAS OF MEMORIES</p><h2>每個光點，<br>都有一個家的故事。</h2></div><p>從一座城市出發，聽見不同的生活。<br>選一盞燈，讓故事帶你走近。</p></div>
-      <div class="map-layout"><div class="map-panel"><div class="map-topline"><span>家鄉故事地圖</span><span id="map-count"></span></div><div id="map-canvas" class="map-canvas"><svg id="india-map" viewBox="0 0 720 680" role="group" aria-label="印度家鄉互動地圖"><g id="map-geography"></g><g id="map-markers"></g></svg><span class="ocean ocean-west">ARABIAN<br>SEA</span><span class="ocean ocean-east">BAY OF<br>BENGAL</span></div><div class="map-controls"><button id="map-out" aria-label="縮小地圖">−</button><button id="map-reset">全覽</button><button id="map-in" aria-label="放大地圖">＋</button></div><p class="map-credit">地圖：Natural Earth · 概略位置，非住址；邊界僅供地理定位</p></div><aside class="map-stories"><div class="map-filter"><label for="theme-filter">依記憶探索</label><select id="theme-filter"><option value="all">所有故事</option></select></div><div id="story-list"></div></aside></div>
+      <div class="section-heading"><div><p class="eyebrow">01 / AN ATLAS OF MEMORIES</p><h2 data-i18n-html="map.title">每個光點，<br>都有一個家的故事。</h2></div><p data-i18n-html="map.lead">從一座城市出發，聽見不同的生活。<br>選一盞燈，讓故事帶你走近。</p></div>
+      <div class="map-layout">
+        <div class="map-panel">
+          <div class="map-topline"><span data-i18n="map.panelTitle">家鄉故事地圖</span><span id="map-count"></span></div>
+          <div id="map-canvas" class="map-canvas">
+            <svg id="india-map" viewBox="0 0 720 680" role="group" aria-label="印度家鄉互動地圖" data-i18n-attr="aria-label:map.aria"><g id="map-geography"></g><g id="map-markers"></g></svg>
+            <span class="ocean ocean-west">ARABIAN<br>SEA</span><span class="ocean ocean-east">BAY OF<br>BENGAL</span>
+          </div>
+          <div class="map-controls"><button id="map-out" aria-label="縮小地圖" data-i18n-attr="aria-label:map.zoomOut">−</button><button id="map-reset" data-i18n="map.reset">全覽</button><button id="map-in" aria-label="放大地圖" data-i18n-attr="aria-label:map.zoomIn">＋</button></div>
+          <p class="map-credit" data-i18n="map.credit">地圖：Natural Earth · 概略位置，非住址；邊界僅供地理定位</p>
+        </div>
+        <aside class="map-stories">
+          <div class="map-filter"><label for="theme-filter" data-i18n="map.filterLabel">依記憶探索</label><select id="theme-filter"></select></div>
+          <div id="story-list"></div>
+        </aside>
+      </div>
     </section>
-    <section id="culture" class="section culture-section"><div class="section-heading"><div><p class="eyebrow">02 / MANY WAYS TO CELEBRATE</p><h2>同一個節日，<br>不只一種模樣。</h2></div><p>從光、味道與相聚開始認識。<br>點開一張卡，留一點時間給好奇心。</p></div><div id="culture-grid" class="culture-grid"></div><p class="section-footnote">背景閱讀與人物記憶分開呈現；正式展出的文化敘述將由共同策展者審閱。</p></section>
-    <section id="play" class="section play-section"><div class="section-heading"><div><p class="eyebrow">03 / MAKE A MEMORY</p><h2>讓好奇心，<br>帶你多停留一下。</h2></div><p>創作、發現、收藏。<br>用自己的步調，參與這場展覽。</p></div><div id="game-grid" class="game-grid"></div></section>
-    <section class="interlude"><p class="eyebrow">FROM HOME TO HERE</p><h2>距離讓我們離家，<br>相聚讓這裡也成為家。</h2><p>未來，這裡將收錄共同籌備與晚會的真實影像。<br>故事會繼續，光也會繼續。</p><span class="interlude-line"></span><p class="small">清華 · 一起慶祝的記憶</p></section>
-    <section id="wall" class="section wall-section"><div class="section-heading"><div><p class="eyebrow">04 / LEAVE A LITTLE LIGHT</p><h2>留一盞燈，<br>給你想念的人。</h2></div><p>一句祝福，一段回憶，或一個想問的問題。<br>把你的故事，也留在這裡。</p></div><div class="wall-layout"><div><div class="wall-tabs" role="group" aria-label="留言主題"><button class="active" data-wall="all">所有光點</button><button data-wall="祝福">一句祝福</button><button data-wall="家的記憶">家的記憶</button><button data-wall="提問">我想問</button></div><div id="messages" class="messages"></div></div><form id="message-form" class="message-form"><p class="eyebrow">YOUR LIGHT</p><h3>你想把光留給誰？</h3><label>你的暱稱<input name="name" maxlength="24" required placeholder="怎麼稱呼你"></label><label>選擇主題<select name="topic"><option>祝福</option><option>家的記憶</option><option>提問</option></select></label><label>寫下一句話<textarea name="message" maxlength="300" rows="4" required placeholder="此刻，我想起了……"></textarea></label><p class="storage-note">Demo 留言只保存在這個瀏覽器，不會公開給其他人。</p><button class="button gold" type="submit">點亮我的留言</button></form></div><div id="public-comments"></div></section>
+
+    <!-- 02 文化探索（js/app/culture.js） -->
+    <section id="culture" class="section culture-section">
+      <div class="section-heading"><div><p class="eyebrow">02 / MANY WAYS TO CELEBRATE</p><h2 data-i18n-html="culture.title">同一個節日，<br>不只一種模樣。</h2></div><p data-i18n-html="culture.lead">從光、味道與相聚開始認識。<br>點開一張卡，留一點時間給好奇心。</p></div>
+      <div id="culture-grid" class="culture-grid"></div>
+      <p class="section-footnote" data-i18n="culture.footnote">背景閱讀與人物記憶分開呈現；正式展出的文化敘述將由共同策展者審閱。</p>
+    </section>
+
+    <!-- 03 互動工坊（js/games/，新增遊戲請看 js/games/README.md） -->
+    <section id="play" class="section play-section">
+      <div class="section-heading"><div><p class="eyebrow">03 / MAKE A MEMORY</p><h2 data-i18n-html="play.title">讓好奇心，<br>帶你多停留一下。</h2></div><p data-i18n-html="play.lead">創作、發現、收藏。<br>用自己的步調，參與這場展覽。</p></div>
+      <div id="game-grid" class="game-grid"></div>
+    </section>
+
+    <section class="interlude">
+      <p class="eyebrow">FROM HOME TO HERE</p>
+      <h2 data-i18n-html="interlude.title">距離讓我們離家，<br>相聚讓這裡也成為家。</h2>
+      <p class="interlude-text">未來，這裡將收錄共同籌備與晚會的真實影像。<br>故事會繼續，光也會繼續。</p>
+      <span class="interlude-line"></span>
+      <p class="small" data-i18n="interlude.small">清華 · 一起慶祝的記憶</p>
+    </section>
+
+    <!-- 04 點燈留言（js/app/wall.js，資料存在 Supabase） -->
+    <section id="wall" class="section wall-section">
+      <div class="section-heading"><div><p class="eyebrow">04 / LEAVE A LITTLE LIGHT</p><h2 data-i18n-html="wall.title">留一盞燈，<br>給你想念的人。</h2></div><p data-i18n-html="wall.lead">一句祝福，一段回憶，或一個想問的問題。<br>把你的故事，也留在這裡。</p></div>
+      <div class="wall-layout">
+        <div>
+          <div class="wall-tabs" role="group" aria-label="留言主題" data-i18n-attr="aria-label:wall.tabsAria"><button class="active" data-wall="all" data-i18n="wall.tabAll">所有光點</button><button data-wall="祝福" data-i18n="wall.tab.祝福">一句祝福</button><button data-wall="家的記憶" data-i18n="wall.tab.家的記憶">家的記憶</button><button data-wall="提問" data-i18n="wall.tab.提問">我想問</button></div>
+          <div id="messages" class="messages" aria-live="polite"></div>
+        </div>
+        <form id="message-form" class="message-form">
+          <p class="eyebrow">YOUR LIGHT</p>
+          <h3 data-i18n="wall.formTitle">你想把光留給誰？</h3>
+          <label><span data-i18n="wall.nameLabel">你的暱稱</span><input name="name" maxlength="24" required placeholder="怎麼稱呼你" data-i18n-attr="placeholder:wall.namePlaceholder"></label>
+          <label><span data-i18n="wall.topicLabel">選擇主題</span><select name="topic"><option value="祝福" data-i18n="topic.祝福">祝福</option><option value="家的記憶" data-i18n="topic.家的記憶">家的記憶</option><option value="提問" data-i18n="topic.提問">提問</option></select></label>
+          <label><span data-i18n="wall.messageLabel">寫下一句話</span><textarea name="message" maxlength="300" rows="4" required placeholder="此刻，我想起了……" data-i18n-attr="placeholder:wall.messagePlaceholder"></textarea></label>
+          <label class="hp-field" aria-hidden="true">website<input name="website" tabindex="-1" autocomplete="off"></label>
+          <p class="storage-note" data-i18n="board.note">留言會立即公開，請勿留下電話、地址等個人資料。看到不當留言可按「檢舉」。</p>
+          <button class="button gold" type="submit" data-i18n="wall.submit">點亮我的留言</button>
+        </form>
+      </div>
+    </section>
   </main>
-  <footer><a class="brand" href="#home"><span class="brand-mark">✳</span><span>LIGHT ACROSS HOME<small>關於排燈節、離家與歸屬的數位展覽</small></span></a><div><a href="editor.html">策展內容編輯</a><button class="text-button" id="about-button">關於展覽與素材</button><span>DEMO EDITION · 2026</span></div></footer>
-  <dialog id="story-dialog" class="story-dialog"><button class="dialog-close" aria-label="關閉人物故事">×</button><div id="story-content"></div></dialog>
-  <dialog id="activity-dialog" class="activity-dialog"><button class="dialog-close" aria-label="關閉互動視窗">×</button><div id="activity-content"></div></dialog>
+
+  <footer>
+    <a class="brand" href="#home"><span class="brand-mark">✳</span><span>LIGHT ACROSS HOME<small data-i18n="footer.tagline">關於排燈節、離家與歸屬的數位展覽</small></span></a>
+    <div><button class="text-button" id="about-button" data-i18n="footer.about">關於展覽與素材</button><span>DEMO EDITION · 2026</span></div>
+  </footer>
+
+  <dialog id="story-dialog" class="story-dialog"><button class="dialog-close" aria-label="關閉人物故事" data-i18n-attr="aria-label:dialog.closeStory">×</button><div id="story-content"></div></dialog>
+  <dialog id="activity-dialog" class="activity-dialog"><button class="dialog-close" aria-label="關閉互動視窗" data-i18n-attr="aria-label:dialog.closeActivity">×</button><div id="activity-content"></div></dialog>
   <div id="toast" role="status" aria-live="polite"></div>
-  <script type="module" src="app.js"></script>
-</body></html>
+
+  <script type="module" src="js/app/main.js"></script>
+</body>
+</html>

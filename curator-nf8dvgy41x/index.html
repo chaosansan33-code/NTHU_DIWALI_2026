@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <title>策展內容編輯｜Light Across Home</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <!-- 策展編輯頁：刻意放在不易猜到的資料夾，首頁沒有連結。只會改動自己瀏覽器裡的草稿與匯出的檔案。 -->
+  <header class="site-header">
+    <a class="brand" href="../index.html"><span class="brand-mark">✳</span><span>LIGHT ACROSS HOME<small>策展內容編輯工作台</small></span></a>
+    <a href="../index.html">回到展覽</a>
+  </header>
+  <main class="editor-shell">
+    <p class="eyebrow">CURATOR'S DESK</p>
+    <h1>把你的故事，放進展覽。</h1>
+    <div class="editor-note">這是內容編輯工具，不是已連線的網站管理後台。修改先留在此瀏覽器；按「匯出網站內容」取得 content.json，再替換 GitHub 裡的 data/content.json，公開網站才會更新。請定期匯出備份。英文內容可在上方「編輯語言 → English」填寫，或照 docs/TRANSLATION.md 請 AI 翻譯。觀眾留言存在 Supabase，不在這裡管理。</div>
+    <div class="editor-lang" role="group" aria-label="編輯語言">
+      <span>編輯語言</span><button data-edit-lang="zh">中文</button><button data-edit-lang="en">English</button>
+    </div>
+    <div class="editor-toolbar">
+      <button class="button gold" id="preview-draft">儲存並預覽草稿</button>
+      <button class="button" id="export-content">匯出網站內容</button>
+      <label class="button" for="import-content">匯入內容檔</label>
+      <input id="import-content" type="file" accept="application/json,.json" hidden>
+      <button class="button" id="reset-draft">重新載入已發布內容</button>
+    </div>
+    <p id="editor-status" class="editor-status" role="status">正在載入……</p>
+    <div class="editor-layout"><aside class="editor-nav" id="editor-nav"></aside><section class="editor-panel" id="editor-panel"></section></div>
+  </main>
+  <script type="module" src="../js/editor/editor.js"></script>
+</body>
+</html>
